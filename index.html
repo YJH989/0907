@@ -123,20 +123,10 @@
 	  })
     })  // end of txbuilder
 			})
-			$('#getBalance').on('click', async function () {
-				let fromaddress = $("#fromaddress").val();
-				let getbalance = await web3.eth.getBalance(fromaddress);
-    let balance = web3.utils.fromWei(getbalance, "ether")
-
-    if (DEBUG) console.log("balance : ", balance + " ETH");
-    $('#message').text(" balance: " + balance + " ETH");
-			})
 		
 		
 		
-		
-		
-		
+				
 		
 	  });
     </script>
